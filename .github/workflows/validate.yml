@@ -1,0 +1,33 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.11"]
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Validate repository
+        run: python scripts/validate_repo.py --root .
+
+      - name: Compile scripts
+        run: python -m py_compile scripts/docviz.py scripts/upstream.py scripts/self_test.py scripts/validate_repo.py
+
+      - name: Run isolated tests
+        run: python scripts/self_test.py --root .

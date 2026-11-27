@@ -1,0 +1,46 @@
+name: Bug 报告
+description: 报告文档工作流、更新同步或仓库脚本的问题
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际行为
+      description: 请说明发生了什么，并粘贴关键错误信息。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期行为
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤
+      description: 使用可脱敏的最小示例，不要上传 API Key 或私有业务文档。
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 版本
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 环境
+      placeholder: Windows 11 / Python 3.11
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: 安全与隐私
+      options:
+        - label: 我已移除凭据、私有业务内容和真实确认码。
+          required: true

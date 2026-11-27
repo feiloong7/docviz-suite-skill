@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+.DS_Store
+Thumbs.db
+*.skill
+docviz-runs/
+docviz-updates/
+docviz-backups/
+docviz-self-test-*/
+docviz-package-test-*/
+.pytest_cache/
+.coverage

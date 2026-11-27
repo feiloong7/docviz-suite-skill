@@ -1,0 +1,31 @@
+name: 功能建议
+description: 提议新的文档类型、可视化编排或工程能力
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 要解决的问题
+      description: 请描述具体场景，而不只是希望增加的功能名。
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议方案
+      description: 说明输入、输出，以及与现有确认门和上游编排的关系。
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 替代方案与影响
+      description: 说明兼容性、依赖、安全或回滚影响。
+  - type: checkboxes
+    id: principles
+    attributes:
+      label: 原则确认
+      options:
+        - label: 该建议不会绕过用户确认、源文件校验或更新安全边界。
+          required: true

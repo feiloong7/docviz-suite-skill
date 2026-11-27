@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "show-me",
+      "install_dir": "show-me",
+      "kind": "github",
+      "repo": "charlie947/show-me",
+      "branch": "main",
+      "subpath": "skills/show-me",
+      "recorded_version": "1.0.0",
+      "baseline_commit": "69e488e301e8d6f43b8ddc883cb2392b1dd45264",
+      "role": "文档理解页与最终呈现"
+    },
+    {
+      "id": "methodology-visualization",
+      "install_dir": "methodology-visualization",
+      "kind": "skillhub",
+      "slug": "methodology-visualization",
+      "recorded_version": "1.0.2",
+      "role": "一页式总览信息图"
+    },
+    {
+      "id": "archify",
+      "install_dir": "archify",
+      "kind": "skillhub",
+      "slug": "archify4workbuddy",
+      "recorded_version": "1.0.1",
+      "role": "主流程、架构、数据流、时序和生命周期主图"
+    },
+    {
+      "id": "flowchart-designer",
+      "install_dir": "flowchart-designer",
+      "kind": "skillhub",
+      "slug": "flowchart-designer",
+      "recorded_version": "1.0.0",
+      "role": "标准细节流程与可编辑 Mermaid"
+    },
+    {
+      "id": "mindmapgenerator",
+      "install_dir": "mindmapgenerator",
+      "kind": "skillhub",
+      "slug": "mindmapgenerator",
+      "recorded_version": "1.0.3",
+      "role": "全量分层大纲与交互思维导图"
+    },
+    {
+      "id": "graphify",
+      "install_dir": "graphify",
+      "kind": "skillhub",
+      "slug": "graphify",
+      "recorded_version": "2.1.0",
+      "runtime_package": "graphifyy",
+      "role": "关系知识图谱、查询和影响分析"
+    }
+  ]
+}
