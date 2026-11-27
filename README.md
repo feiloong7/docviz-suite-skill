@@ -1,5 +1,12 @@
 # docviz-suite-skill
 
+<p align="center">
+  <a href="https://github.com/feiloong7/docviz-suite-skill/actions/workflows/validate.yml"><img src="https://github.com/feiloong7/docviz-suite-skill/actions/workflows/validate.yml/badge.svg" alt="CI"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/feiloong7/docviz-suite-skill" alt="License"></a>
+  <img src="https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white" alt="Python 3.11+">
+  <img src="https://img.shields.io/badge/version-1.0.0-blue" alt="Version">
+</p>
+
 > 把业务规则、产品需求文档（PRD）、系统介绍与架构文档，转化为可分层阅读、可离线打开的一整套可视化成果。
 >
 > Turn business rules, product requirement documents (PRD), system overviews, and architecture documents into a layered, offline-readable suite of visualizations.
@@ -84,7 +91,7 @@ docviz-suite-skill/
 
 ## 环境要求 Requirements
 
-- Python 3.9+；仓库脚本只使用 Python 标准库。Python 3.9+; scripts use only the standard library.
+- Python 3.11+；仓库脚本只使用 Python 标准库。Python 3.11+; scripts use only the standard library.
 - 工作空间可写，产物默认写入 `<工作空间>/输出/`。A writable workspace; outputs default to `<workspace>/输出/`.
 - 各上游技能及其自身运行依赖；具体以安装版本的 `SKILL.md` 为准。The upstream skills and their own runtime dependencies; follow each installed `SKILL.md`.
 - Graphify 自动语义抽取需要用户已有 LLM API Key；无 Key 时可采用“人工语义抽取 + graphify 原生渲染”，必须如实标注。Graphify auto-extraction needs an LLM API Key; without one you may use "manual extraction + graphify native rendering", which must be labeled accordingly.
